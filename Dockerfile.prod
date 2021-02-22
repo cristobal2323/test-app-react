@@ -1,0 +1,22 @@
+# pull official base image
+FROM node:10.14.2-alpine
+
+# set working directory
+COPY ["./client", "app/client"]
+
+WORKDIR /app/client
+
+RUN npm install
+RUN npm rebuild node-sass
+RUN npm run build
+
+# set working directory
+
+WORKDIR /app/server
+
+COPY ./server ./
+
+RUN npm install
+RUN npm install -g nodemon
+
+CMD ["npm", "start"]

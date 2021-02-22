@@ -1,0 +1,17 @@
+version: "3"
+
+services:
+  ##################################
+  # Setup node container
+  ##################################
+  server:
+    container_name: server
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    expose:
+      - 8017
+    ports:
+      - 8017:8017
+    volumes:
+      - ./server:/app/server

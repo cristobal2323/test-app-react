@@ -1,0 +1,6 @@
+export const RESET_LOGIN = "RESET_LOGIN";
+
+/* (ASYNC) */
+export const GET_LOGIN_INIT = "GET_LOGIN_INIT";
+export const GET_LOGIN_SUCCESS = "GET_LOGIN_SUCCESS";
+export const GET_LOGIN_FAILURE = "GET_LOGIN_FAILURE";

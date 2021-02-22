@@ -1,0 +1,86 @@
+$roboto-font-regular-path: "../../fonts/Roboto-Regular/";
+$roboto-font-bold-path: "../../fonts/Roboto-Bold/";
+$roboto-font-italic-path: "../../fonts/Roboto-Italic/";
+$awesome-path: "../../fonts/webfonts/";
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url($roboto-font-regular-path + "Roboto-Regular.eot");
+  src: url($roboto-font-regular-path + "Roboto-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url($roboto-font-regular-path + "Roboto-Regular.woff2") format("woff2"),
+    url($roboto-font-regular-path + "Roboto-Regular.woff") format("woff"),
+    url($roboto-font-regular-path + "Roboto-Regular.ttf") format("truetype"),
+    url($roboto-font-regular-path + "Roboto-Regular.svg#Roboto-Regular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url($roboto-font-bold-path + "Roboto-Bold.eot");
+  src: url($roboto-font-bold-path + "Roboto-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url($roboto-font-bold-path + "Roboto-Bold.woff2") format("woff2"),
+    url($roboto-font-bold-path + "Roboto-Bold.woff") format("woff"),
+    url($roboto-font-bold-path + "Roboto-Bold.ttf") format("truetype"),
+    url($roboto-font-bold-path + "Roboto-Bold.svg#Roboto-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto-Italic";
+  src: url($roboto-font-italic-path + "Roboto-Italic.eot");
+  src: url($roboto-font-italic-path + "Roboto-Italic.eot?#iefix")
+      format("embedded-opentype"),
+    url($roboto-font-italic-path + "Roboto-Italic.woff2") format("woff2"),
+    url($roboto-font-italic-path + "Roboto-Italic.woff") format("woff"),
+    url($roboto-font-italic-path + "Roboto-Italic.ttf") format("truetype"),
+    url($roboto-font-italic-path + "Roboto-Italic.svg#Roboto-Italic")
+      format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 400;
+  font-display: $fa-font-display;
+  src: url("#{$awesome-path}/fa-regular-400.eot");
+  src: url("#{$awesome-path}/fa-regular-400.eot?#iefix")
+      format("embedded-opentype"),
+    url("#{$awesome-path}/fa-regular-400.woff2") format("woff2"),
+    url("#{$awesome-path}/fa-regular-400.woff") format("woff"),
+    url("#{$awesome-path}/fa-regular-400.ttf") format("truetype"),
+    url("#{$awesome-path}/fa-regular-400.svg#fontawesome") format("svg");
+}
+
+.far {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 900;
+  font-display: $fa-font-display;
+  src: url("#{$awesome-path}/fa-solid-900.eot");
+  src: url("#{$awesome-path}/fa-solid-900.eot?#iefix")
+      format("embedded-opentype"),
+    url("#{$awesome-path}/fa-solid-900.woff2") format("woff2"),
+    url("#{$awesome-path}/fa-solid-900.woff") format("woff"),
+    url("#{$awesome-path}/fa-solid-900.ttf") format("truetype"),
+    url("#{$awesome-path}/fa-solid-900.svg#fontawesome") format("svg");
+}
+
+.fa,
+.fas {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}

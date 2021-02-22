@@ -1,0 +1,28 @@
+$mobile: 450px;
+$tablet: 1025px;
+$desktop: 1250px;
+$tv: 1550px;
+
+@mixin respond-to($media) {
+  @if $media == mobile {
+    @media only screen and (max-width: $mobile) {
+      @content;
+    }
+  } @else if $media == tabletPhone {
+    @media only screen and (max-width: $tablet - 1) {
+      @content;
+    }
+  } @else if $media == tablet {
+    @media only screen and (min-width: $mobile + 1) and (max-width: $tablet) {
+      @content;
+    }
+  } @else if $media == desktop {
+    @media only screen and (min-width: $tablet) and (max-width: $desktop) {
+      @content;
+    }
+  } @else if $media == tv {
+    @media only screen and (min-width: $tv + 1) {
+      @content;
+    }
+  }
+}
